@@ -6,14 +6,11 @@ use App\Models\Admin\Post;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Type extends Model
+class Technology extends Model
 {
-    use HasFactory;
-
     public function posts()
     {
-    return $this->hasMany(Post::class);
+        return $this->belongsToMany(Post::class);
     }
+    use HasFactory;
 }
-
-
