@@ -1,10 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\admin\DashboardController as AdminDashboardController;
-use App\Http\Controllers\Admin\PostController as AdminPostController;
-use App\Http\Controllers\guest\HomeController as GuestHomeController;
+
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Guest\HomeController as GuestHomeController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
